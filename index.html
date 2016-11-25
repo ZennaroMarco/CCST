@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+        <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+        <title>1.a</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize core CSS -->
+        <link href="materialize/css/materialize.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <ul class="collapsible" data-collapsible="accordion"> 
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-left:12px; margin-right:30px">High Availability Approach
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <div class="descrizione">Description</div>
+                            <p style="border-right:1px solid grey;">What approach is taken to provide high availability?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:45px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None
+                                            <div class="tooltip">*
+                                                <span class="tooltiptext">There is no HA approach being used</span>
+                                            </div>
+                                        </label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)
+                                            <div class="tooltip">*
+                                                <span class="tooltiptext">No TX Consistency across nodes</span>
+                                            </div>
+                                        </label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)
+                                            <div class="tooltip">*
+                                                <span class="tooltiptext">Replicated FS</span>
+                                            </div>
+                                        </label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)
+                                            <div class="tooltip">*
+                                                <span class="tooltiptext">TX consistency across nodes</span>
+                                            </div>
+                                        </label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/2.png" class="icon-form" style="margin-left:12px; margin-right:30px">Recoverability Requirement
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">What is the recoverability requirement of this component?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/3.png" class="icon-form" style="margin-left:12px; margin-right:30px">Integrations
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">How are integrations to other systems are implemented?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/4.png" class="icon-form" style="margin-left:12px; margin-right:30px">Interoperability
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <div class="descrizione">Description</div>                             
+                            <p style="border-right:1px solid grey;">How many systems does your application interact with?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:45px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/5.png" class="icon-form" style="margin-left:12px; margin-right:30px">Latency Requirement
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is low latency required for application data exchange ?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/6.png" class="icon-form" style="margin-left:12px; margin-right:30px">Corporate Security Restrictions
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is this component subject to Corporate privacy and confidentiality restrictions?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/7.png" class="icon-form" style="margin-left:12px; margin-right:30px">Workload Variability
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is the workload of this application highly variable and not predictable? (CPU usage over time as difference between peak and average)</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/8.png" class="icon-form" style="margin-left:12px; margin-right:30px">Development Environment
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">What are the constraints to distributed development for this component?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/9.png" class="icon-form" style="margin-left:12px; margin-right:30px">Demand Predictability
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">How predictable is the operational demand for this component?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/0.jpg" class="icon-form">Device Dependence
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Does this component rely on proprietary hardware or a device dependent algorithm?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/1.png" class="icon-form">Data Locality
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Where is the center of gravity of data for this component?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/2.png" class="icon-form">Application goal: Business as usual vs new ventures
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is this application aimed at experimenting new business models?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/3.png" class="icon-form">Communication protocol
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Does your application use multicast protocol?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/4.png" class="icon-form">Application bindings resolution
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">How does application address endpoints ? Using DNS or IPs ?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/5.png" class="icon-form">Bandwidth
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">How much network traffic of any type does the application require?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/6.png" class="icon-form">Tenancy
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is your application based on tenant based security model (network segmentation of DMZ external, green zone and backend collapsed into logical networks)</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/7.png" class="icon-form">Business impact of outage
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Does your application have any liabilities with internal or external consumer ? </p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/8.png" class="icon-form">Bespoke vs Package and application age
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is the application COTS and how much is it up to date ?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+            <li> 
+                <div class="collapsible-header">
+                    <img src="assets/img/1.png" class="icon-form" style="margin-right:-5px">
+                    <img src="assets/img/9.png" class="icon-form">Containerized workload
+                </div>                 
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s12 m4 l4 center-align" style=":1px solid black;"> 
+                            <h4>Descritpion</h4> 
+                            <p style="border-right:1px solid grey;">Is the application deployment model based on standard containers?</p> 
+                        </div>
+                        <div class="col s12 m4 l4 radio"> 
+                            <div style="margin-top:65px; margin-left:30px; width:300%">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">None</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">Asynchronous (Batch, Messages, ..)</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="t-option" name="selector">
+                                        <label for="t-option" class="radio">Synchronous but standard based (web services, ...)</label>
+                                        <div class="check">
+</div>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">Synchronous and NOT standard based (DB Link, ...)</label>
+                                        <div class="check"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+            </li>             
+        </ul>
+        <!-- Materialize core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
